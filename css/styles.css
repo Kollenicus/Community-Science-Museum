@@ -1,0 +1,1785 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    Padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+	border: none;
+	outline: none;
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* h1 {
+    font-size: 6.4rem;
+    font-weight: bold;
+    color: white;
+}
+
+* h1 span {
+    font-size: 6.4rem;
+    font-weight: bold;
+    color: rgba(248, 252, 4, 1);
+}
+
+* h2, h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgba(5, 18, 35, 1);
+}
+
+
+/*-----This is the navigation bar-----*/
+.header {
+    height: 8rem;
+    width: 100%;
+    padding: 0rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(5, 18, 35, 1);
+    color: white;
+    position: relative;
+    z-index: 20;
+}
+
+.nav-logo p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.navbar {
+    display: flex;
+    gap: 5rem;
+}
+
+.navbar a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.header a:hover, .header a.active {
+	color: rgba(248, 252, 4, 1);
+}
+
+#donate-page {
+    display: none;
+}
+
+#menu-icon {
+    display: none;
+	font-size: 4rem;
+	cursor: pointer;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.nav-icons img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.nav-button {
+    width: 11rem;
+    height: 4rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    text-align: center;
+    align-content: center;
+    background: rgba(248, 252, 4, 1);
+    color: black;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    background-color: orange;
+}
+
+
+/*--------This is the Home page-------*/
+.home-main {
+    background: url(../images/landing-page-home.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0rem 6rem;
+    height: 69rem;
+    align-content: center;
+    z-index: 1;
+}
+
+.home-main::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(5, 18, 35, 0.70);
+    z-index: 0;
+}
+
+.main-button {
+    width: 15rem;
+    height: 4rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    text-align: center;
+    align-content: center;
+    background: rgba(248, 252, 4, 1);
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.main-button:hover {
+    background-color: orange;
+}
+
+.home-main h1 {
+    position: relative;
+    z-index: 2;
+}
+
+.home-main p {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    margin: 3rem 0rem 3rem 0rem;
+    z-index: 2;
+    position: relative;
+}
+
+.home-info {
+    height: 16rem;
+    width: 100%;
+    padding: 0rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-info h2 {
+    color: yellow;
+    font-size: 5rem;
+}
+
+.home-highlights {
+    width: 100%;
+    padding: 0rem 6rem;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(5, 18, 35, 1);
+    margin-bottom: 5rem;
+}
+
+.home-article-1 {
+    height: 65rem;
+    width: 32%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.home-article-1 h3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 0 1rem 0;
+    border-bottom: solid;
+    border-width: 0.3rem;
+}
+
+.home-article-1 p {
+    padding: 1rem 2rem;
+}
+
+.home-article-1 a {
+    height: 100%;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    font-size: 1.6rem;
+    align-items: flex-end;
+}
+
+.home-highlights img {
+    height: 30rem;
+    
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    object-fit: cover;
+}
+
+.home-events {
+    width: 100%;
+    padding: 0rem 6rem;
+    gap: 8rem 13rem;
+    margin-bottom: 17rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-events-title {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.home-events-title h2 {
+    width: 100%;
+    font-size: 6.4rem;
+    color: rgba(248, 252, 4, 1);
+}
+
+.home-article-2 {
+    height: 63rem;
+    width: 42rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.home-article-2 h3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 0 1rem 0;
+    border-bottom: solid;
+    border-width: 0.3rem;
+}
+
+.home-article-2 p {
+    padding: 1rem 2rem;
+}
+
+.home-article-2 a {
+    height: 100%;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    font-size: 1.6rem;
+    align-items: flex-end;
+}
+
+.home-events img {
+    height: 40rem;
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    object-fit: cover;
+}
+
+
+/*-----This is the Explore Page-----*/
+.explore-main {
+    background: url(../images/explore-hero-image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0rem 6rem;
+    height: 69rem;
+    align-content: center;
+    z-index: 1;
+}
+
+.explore-main::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(5, 18, 35, 0.70);
+    z-index: 0;
+}
+
+.explore-main h1 {
+    position: relative;
+    z-index: 10;
+    color: rgba(248, 252, 4, 1);
+}
+
+.explore-main p {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    margin: 3rem 0rem 3rem 0rem;
+    z-index: 2;
+    position: relative;
+}
+
+.explore-article-container {
+    width: 100%;
+    padding: 0rem 6rem;
+    margin: 5rem 0 5rem 0;
+    gap: 10rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(5, 18, 35, 1);
+}
+
+.explore-article {
+    height: 80rem;
+    width: 32%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.explore-article h3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 0 1rem 0;
+    border-bottom: solid;
+    border-width: 0.3rem;
+}
+
+.explore-article p {
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+}
+
+.explore-article img {
+    height: 30rem;
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    object-fit: fill;
+}
+
+
+/*-----This is the Events Page-----*/
+.events-main {
+    background: url(../images/events-hero-image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0rem 6rem;
+    height: 35rem;
+    align-content: center;
+    z-index: 1;
+}
+
+.events-main::before {
+    content: "";
+    width: 100%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(5, 18, 35, 0.70);
+    z-index: 0;
+}
+
+.events-main h1 {
+    position: relative;
+    z-index: 10;
+    color: rgba(248, 252, 4, 1);
+}
+
+.events-main p {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    margin: 3rem 0rem 3rem 0rem;
+    z-index: 2;
+    position: relative;
+}
+
+.events-section {
+    height: auto;
+    width: 100%;
+    padding: 0rem 6rem;
+    margin: 5rem 0 5rem 0;
+    gap: 10rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(5, 18, 35, 1);
+}
+
+.events-article-1 {
+    height: 38rem;
+    width: 100%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+}
+
+.events-article-2 {
+    height: 38rem;
+    width: 100%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.events-article-1 h3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 0 1rem 0;
+    border-bottom: solid;
+    border-width: 0.3rem;
+}
+
+.events-article-1 h4 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.events-article-1 p {
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+}
+
+.events-article-1-text {
+    width: 50%;
+    padding: 2rem;
+}
+
+.events-article-1-img {
+    width: 50%;
+}
+
+.events-article-1 img {
+    height: 38rem;
+    width: 100%;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    object-fit: fill;
+}
+
+.events-article-2 h3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 0 1rem 0;
+    border-bottom: solid;
+    border-width: 0.3rem;
+}
+
+.events-article-2 h4 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.events-article-2 p {
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+}
+
+.events-article-2-text {
+    width: 50%;
+    padding: 2rem;
+}
+
+.events-article-2-img {
+    width: 50%;
+}
+
+.events-article-2 img {
+    height: 38rem;
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    object-fit: cover;
+}
+
+/*-----This is the About page-----*/
+.about-main {
+    width: 100%;
+    padding: 0rem 6rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.about-main h1 {
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.about-main-container {
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-main-article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.about-main-article img {
+    height: 43rem;
+    width: 100%;
+}
+
+.about-main-text,
+.about-section-text-1,
+.about-section-text-2 {
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.about-main-text p,
+.about-section-text-1 p,
+.about-section-text-2 p {
+    padding-top: 1rem;
+}
+
+.about-section-1 {
+    width: 100%;
+    padding: 0rem 6rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.about-section-container-1 {
+    width: 80rem;
+    display: flex;
+    gap: 10rem 0rem;
+    flex-direction: column;
+}
+
+.about-section-article-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+}
+
+.about-section-article-1 img {
+    height: 32rem;
+    width: 100%;
+}
+
+.about-article-text-1 {
+    padding: 1rem 2rem;
+}
+
+.about-section-2 {
+    width: 100%;
+    padding: 0rem 6rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16rem;
+}
+
+.about-section-container-2 {
+    width: 80rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.about-section-article-2 {
+    height: 66rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.about-section-article-2 img {
+    height: 30rem;
+    width: 100%;
+}
+
+.about-article-text-2 {
+    padding: 1rem 2rem;
+}
+
+/*--------This is the Visit page--------*/
+.visit-main {
+    width: 100%;
+    padding: 0rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.visit-main h1 {
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.visit-main-container {
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.visit-main-article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+}
+
+.visit-main-article img {
+    height: 43rem;
+    width: 100%;
+}
+
+.visit-main-text,
+.visit-article-text {
+    padding: 1rem 2rem;
+}
+
+.visit-main-text p,
+.visit-article-text p{
+    padding-top: 1rem;
+}
+
+.visit-article-section {
+    width: 100%;
+    padding: 0rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 8rem;
+}
+
+.visit-article-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.visit-article {
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.visit-article img {
+    height: 35rem;
+    width: 100%;
+}
+
+.visit-hours-section {
+    height: 50rem;
+    width: 100vw;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    line-height: 6rem;
+    margin-top: 8rem;
+}
+
+.visit-hours-container h3 {
+    color: white;
+    font-size: 4.8rem;
+}
+
+.visit-hours-container p {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.visit-contact-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12rem;
+}
+
+.visit-contact-section h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 2rem 0rem 2rem 0rem;
+    margin-top: 4rem;
+}
+
+.visit-contact-section h4 {
+    color: white;
+    margin-top: 2rem;
+}
+
+.visit-contact-container {
+    height: 20rem;
+    width: 75rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;  
+}
+
+.visit-contact-item {
+    width: 33%;
+}
+
+.visit-contact-item img {
+    height: 8rem;
+    width: 8rem;
+}
+
+/*-----This is the Donate page-------*/
+.donate-main {
+    width: 100%;
+    padding: 0rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.donate-main-text,
+.donate-information-text {
+    padding: 1rem 2rem;
+}
+
+.donate-main-text p,
+.donate-information-text p{
+    padding-top: 1rem;
+}
+
+.donate-main h1 {
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.donate-main h4 {
+    color: white;
+    margin: 2rem 1rem;
+}
+
+.donate-main-container {
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.donate-main-article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.donate-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem 2rem;
+}
+
+.donate-buttons-container {
+    height: 10rem;
+    width: 80rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.donate-buttons-item {
+    width: 100%;
+}
+
+.donate-main-button {
+    width: 20rem;
+    height: 5rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    text-align: center;
+    align-content: center;
+    background: rgba(248, 252, 4, 1);
+    color: black;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.donate-main-button:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.donate-submit {
+    width: 65rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.donate-submit form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 1rem;
+}
+
+.donate-submit h5 {
+    width: 100%;
+    padding: 1rem 0rem;
+    color: white;
+}
+
+.donate-submit input {
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+.donate-submit label {
+    color: white;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.donate-submit button {
+    width: 10rem;
+    height: 3.5rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    text-align: center;
+    align-content: center;
+    background: rgba(248, 252, 4, 1);
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.donate-submit button:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.donate-information-section {
+    width: 100%;
+    padding: 0rem 6rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.donate-information-container {
+    width: 80rem;
+    display: flex;
+    gap: 10rem 0rem;
+    background-color: yellow;
+    flex-direction: column;
+}
+
+.donate-information-article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+}
+
+.donate-information-article img {
+    height: 50rem;
+    width: 100%;
+}
+
+/*-----This is the Footer section-----*/
+.footer {
+    height: 53rem;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 0rem 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgba(5, 18, 35, 1);
+    color: white;
+}
+
+.footer-container-1 {
+    height: auto;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 0rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: white;
+    border-width: 0.6rem;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 5rem 2rem 3.5rem 0rem;
+}
+
+.footer-social img {
+    margin-right: 2rem;
+}
+
+.footer-time {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem 9rem 3.5rem 0rem;
+}
+
+.footer-container-2 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-container-2 p {
+    font-size: 1.4rem;
+}
+
+.footer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-nav a {
+    font-size: 2.6rem;
+    color: white;
+}
+
+
+@media (max-width: 1024px) {
+/*This is the Navigation bar*/
+    .header {
+        padding: 0rem 2rem;
+    }
+
+    .nav-logo p {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        gap: 2rem;
+    }
+
+    .navbar a {
+        font-size: 1.6rem;
+    }
+
+    .nav-icons{
+        gap: 2rem;
+    }
+
+    .nav-icons img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .nav-button {
+        width: 9rem;
+        height: 2.5rem;
+        font-size: 1.6rem;
+    }
+
+/*This is the Home page*/
+    .home-main {
+        height: 60rem;
+        padding: 0rem 4rem;
+        margin-bottom: 0rem;
+    }
+
+    .home-main h1 {
+        font-size: 4.5rem;
+    }
+
+    .home-main h1 span {
+        font-size: 4.5rem;
+    }
+
+    .home-main p {
+        font-size: 2.4rem;
+    }
+
+    .home-info h2 {
+        font-size: 5rem;
+    }
+
+    .home-highlights {
+        gap: 6rem;
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem 2rem;
+    }
+
+    .home-events {
+        gap: 6rem 13rem;
+    }
+
+    .home-events-title h2 {
+        font-size: 5rem;
+    }
+
+    .home-article-1,
+    .home-article-2 {
+        width: 42rem;
+        height: auto;
+    }
+
+    .home-article-1 img,
+    .home-article-2 img {
+        height: 30rem;
+    }
+
+/*This is the Explore page*/
+    .explore-main {
+        height: 60rem;
+        padding: 6rem;
+        margin-bottom: 0rem;
+    }
+
+    .explore-main h1 {
+        font-size: 4.5rem;
+    }
+
+    .explore-main p {
+        font-size: 1.6rem;
+    }
+
+    .explore-article-container {
+        gap: 6rem;
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem 4rem;
+    }
+
+    .explore-article {
+        width: 42rem;
+        height: auto;
+    }
+
+    .explore-article p {
+        font-size: 1.6rem;
+        padding-bottom: 2rem;
+    }
+
+    .explore-article img {
+        height: 30rem;
+    }
+    
+/*This is the Events page*/
+    .events-main {
+        height: 30rem;
+        padding: 2rem 2rem;
+        margin-bottom: 0rem;
+    }
+    
+    .events-main h1 {
+        font-size: 4rem;
+    }
+    
+    .events-main p {
+        font-size: 2rem;
+    }
+
+    .events-section {
+        padding: 0rem 2rem;
+    }
+
+    .events-article-1,
+    .events-article-2 {
+        height: auto;
+    }
+
+    .events-article-1-text,
+    .events-article-2-text {
+        padding: 1.5rem;
+    }
+
+    .events-article-1 h3,
+    .events-article-2 h3 {
+        font-size: 2rem;
+    }
+
+    .events-article-1 p,
+    .events-article-2 p {
+        font-size: 1.6rem;
+    }
+
+    .events-article-1 img,
+    .events-article-2 img {
+        height: 100%;
+        object-fit: fill;
+    }
+
+/*This is the About page*/
+    .about-main {
+        margin-bottom: 6rem;
+    }
+
+    .about-main h1 {
+        font-size: 3rem;
+    }
+
+    .about-main p {
+        font-size: 1.6rem;
+    }
+
+    .about-main-container {
+        width: 80%;
+    }
+
+    .about-main-article img {
+        height: 38rem;
+    }
+
+    .about-section-container-1,
+    .about-section-container-2 {
+        width: 80%;
+    }
+
+    .about-section-container-2 {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about-section-article-1 p,
+    .about-section-article-2 p {
+        font-size: 1.6rem;
+    }
+
+    .about-section-article-2 img {
+        height: 38rem;
+    }
+
+/*This is the Visit page*/
+    .visit-main {
+        margin-bottom: 2rem;
+    }
+
+    .visit-main h1 {
+        font-size: 3rem;
+    }
+
+    .visit-main-container {
+        width: 70%;
+    }
+
+    .visit-main-article img {
+        height: 38rem;
+    }
+
+    .visit-main-article p {
+        font-size: 1.6rem;
+    }
+
+    .visit-article-container {
+        width: 60%;
+        flex-direction: column;
+    }
+
+    .visit-article {
+        height: auto;
+    }
+
+    .visit-article p {
+        font-size: 1.6rem;
+    }
+
+    .visit-hours-container h3 {
+        font-size: 3.6rem;
+    }
+
+    .visit-hours-container p {
+        font-size: 1.6rem;
+    }
+
+    .visit-contact-item h4 {
+        font-size: 1.6rem;
+    }
+
+    .visit-contact-item img {
+        height: 6rem;
+        width: 6rem;
+    }
+
+/*This is the Donate page*/
+.donate-main-container {
+    padding: 0 2rem;
+}
+
+.donate-main h1 {
+    font-size: 2.5rem;
+}
+
+.donate-main p {
+    font-size: 1.6rem;
+}
+
+.donate-buttons-container {
+    gap: 2rem;
+}
+
+.donate-main-button {
+    width: 16rem;
+    font-size: 1.2rem;
+}
+
+.donate-information-section {
+    padding: 0 4rem;
+}
+
+.donate-information-container {
+    width: 100%;
+}
+
+.donate-information-article p{
+    font-size: 1.6rem;
+}
+
+.donate-information-article img {
+    height: auto;
+}
+
+.donate-submit {
+    width: 60rem;
+}
+
+.donate-submit input {
+    width: 22rem;
+}
+
+.donate-submit button {
+    width: 10rem;
+    font-size: 1.6rem;
+}
+
+    
+/*This is the Footer Section*/
+    .footer-container-1 {
+        padding: 0rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 5rem;
+        padding: 0rem 2rem;   
+    }
+
+    .nav-logo p {
+        font-size: 2.2rem;
+    }
+
+    .navbar {
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        top: 5rem;
+        width: 100%;
+        padding: 3rem 2rem;
+        background: rgba(5, 18, 35, 1);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .navbar.active {
+        top: 5rem;        
+        opacity: 1; 
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+    #donate-page {
+        display: block;
+    }
+
+    #menu-icon {
+		display: block;
+	}
+
+/*This is the Home Page*/
+.home-main {
+    padding: 2rem;
+    height: auto;
+    align-items: center;
+}
+
+.home-main::before {
+    height: 40%;
+}
+
+.main-button {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-main h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.home-main h1 span {
+    font-size: 3rem;
+}
+
+.home-main p {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 0rem;
+}
+
+.home-info {
+    padding: 2rem;
+    text-align: center;
+    height: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.home-info h2 {
+    font-size: 2rem;
+    padding: 0rem 0rem;
+}
+
+.home-highlights {
+    padding: 0rem 2rem;
+}
+
+.home-events {
+    padding: 0rem 2rem;
+}
+
+.home-article-1 p,
+.home-article-2 p {
+    font-size: 1.4rem;
+}
+
+/*This is the Explore page*/
+.explore-main {
+    padding: 2rem;
+    height: 100%;
+    align-items: center;
+}
+
+.explore-main::before {
+    height: 50%;
+}
+
+.explore-main h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.explore-main h1 span {
+    font-size: 3rem;
+}
+
+.explore-main p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.explore-article-container {
+    padding: 0rem 2rem;
+}
+
+.explore-article {
+    padding: 0 0rem;
+}
+
+.explore-article p {
+    font-size: 1.4rem;
+}
+
+.explore-article img {
+    height: auto;
+}
+
+/*This is the events page*/
+.events-main {
+    padding: 0 2rem;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.events-main::before {
+    height: 40%;
+}
+
+.events-main h1 {
+    font-size: 2rem;
+}
+
+.events-main p {
+    font-size: 1.4rem;
+}
+
+.events-section {
+    gap: 2rem;
+}
+
+.events-article-1,
+.events-article-2 {
+    width: 43rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events-article-1-text,
+.events-article-2-text {
+    width: 100%;
+    text-align: center;
+}
+
+.events-article-1-img,
+.events-article-2-img {
+    width: 100%;
+}
+
+.events-article-1 img,
+.events-article-2 img {
+    border-radius: 2rem 2rem 0 0;
+}
+
+.events-article-1 h3,
+.events-article-2 h3 {
+    font-size: 2rem;
+}
+
+.events-article-1 h4,
+.events-article-2 h4 {
+    font-size: 1.4rem;
+}
+
+.events-article-1 p,
+.events-article-2 p {
+    font-size: 1.4rem;
+}
+
+/*This is the About page*/
+.about-main {
+    padding: 0 2rem;
+}
+
+.about-main h1 {
+    font-size: 2.8rem;
+}
+
+.about-main p {
+    font-size: 1.4rem;
+}
+
+.about-main-container {
+    width: 80%;
+}
+
+.about-main-article img {
+    height: auto;
+}
+
+.about-section-1 {
+    padding: 0 2rem;
+    margin-bottom: 6rem;
+}
+
+.about-section-1 img {
+    height: 20rem;
+}
+
+.about-section-2 {
+    padding: 0 2rem;
+}
+
+.about-section-container-1,
+.about-section-container-2 {
+    width: 80%;
+    gap: 6rem;
+}
+
+.about-section-container-2 {
+    flex-direction: column;
+}
+
+.about-section-article-2 img {
+    height: 25rem;
+}
+
+.about-section-article-1,
+.about-section-article-2 {
+    height: auto;
+}
+
+.about-section-article-1 p,
+.about-section-article-2 p {
+    font-size: 1.4rem;
+}
+
+
+
+
+/*This is the Visit page*/
+.visit-main {
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+}
+
+.visit-main h1 {
+    font-size: 2.8rem;
+}
+
+.visit-main-container {
+    width: 100%;
+}
+
+.visit-main-article img {
+    height: auto;
+}
+
+.visit-main-article p {
+    font-size: 1.4rem;
+}
+
+.visit-article-section {
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+.visit-article-container {
+    width: 100%;
+}
+
+.visit-article {
+    height: auto;
+}
+
+.visit-article p {
+    font-size: 1.4rem;
+}
+
+.visit-hours-section {
+    padding: 0 2rem 2rem 2rem;
+    height: auto;
+}
+
+.visit-hours-container h3 {
+    font-size: 2.8rem;
+}
+
+.visit-hours-container p {
+    font-size: 1.4rem;
+    line-height: 4rem;
+}
+
+.visit-contact-section {
+   padding: 0 2rem;
+   height: auto;
+}
+
+.visit-contact-container {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+.visit-contact-item {
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.visit-contact-item img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.visit-contact-item h4 {
+    font-size: 1.4rem;
+}
+
+/*This is the Donate page*/
+.donate-main {
+    padding: 0rem 2rem;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.donate-main h1 {
+    font-size: 2.2rem;
+}
+
+.donate-main-article p {
+    font-size: 1.4rem;
+}
+
+.donate-main-container {
+    padding: 0rem 0rem;
+    width: 100%;
+}
+
+.donate-buttons {
+    gap: 0rem;
+}
+
+.donate-buttons-container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.donate-buttons-item h4 {
+    font-size: 1.6rem;
+}
+
+.donate-main-button {
+    width: 14rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.donate-submit {
+    width: 100%;
+    padding: 0rem 0rem;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.donate-submit form {
+    flex-direction: column;
+    padding: 0 2rem;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.donate-submit label {
+    font-size: 1.4rem;
+    margin-right: 0rem;
+}
+
+.donate-submit input {
+    width: 14rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 0rem;
+    text-align: center;
+}
+
+.donate-submit button {
+    width: 10rem;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+}
+
+.donate-information-section {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.donate-information-article p {
+    font-size: 1.4rem;
+}
+
+/*This is the Footer section*/
+    .footer {
+        height: auto;
+    }
+
+    .footer-container-1 {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+        gap: 1.5rem;
+        padding: 2rem 2rem 1rem 2rem;
+    }
+    
+    .footer-social img {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    .footer-time {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem 2rem 2rem 2rem;
+    }
+
+    .footer-container-2 {
+        padding: 0rem 2rem;
+    }
+
+    .footer-container-2 p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .footer-nav {
+        display: none;    
+    }
+}
